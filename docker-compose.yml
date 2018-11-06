@@ -1,0 +1,9 @@
+version: '3'
+services:
+
+  web:
+    build: ./dataworld
+    volumes:
+      - ./dataworld:/usr/src/app
+    ports:
+      - "3000:3000"
